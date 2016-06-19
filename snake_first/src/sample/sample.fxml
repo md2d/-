@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<Pane maxHeight="500.0" maxWidth="612.0" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressed" prefHeight="600.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Game">
+   <children>
+      <Separator layoutX="19.0" layoutY="521.0" prefHeight="0.0" prefWidth="491.0" />
+      <Slider fx:id="slider" blockIncrement="1.0" layoutX="15.0" layoutY="553.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="1" showTickLabels="true" value="5.0" />
+      <Button fx:id="btn" layoutX="401.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="97.0" text="Start">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font></Button>
+      <Label fx:id="text" layoutX="238.0" layoutY="550.0" prefHeight="19.0" prefWidth="67.0" text="Points:">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="rating" layoutX="297.0" layoutY="550.0" prefHeight="17.0" prefWidth="81.0" text="0">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="text1" alignment="CENTER" layoutX="41.0" layoutY="531.0" prefHeight="19.0" prefWidth="74.0" style="-fx-text-alignment: center;" text="Speed" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Canvas fx:id="canvas" height="500.0" layoutX="6.0" width="500.0" />
+      <Label fx:id="showText" alignment="CENTER" layoutX="165.0" layoutY="228.0" prefHeight="66.0" prefWidth="203.0" text="Alert" />
+   </children>
+</Pane>
